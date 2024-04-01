@@ -1,17 +1,13 @@
 import PriorityHeap.MaxHeap;
 import PriorityHeap.MinHeap;
+import Search.BinarySearch;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        MaxHeap<Integer> maxHeap = new MaxHeap<>();
-        maxHeap.insert(13);
-        maxHeap.insert(12);
-        maxHeap.insert(10);
-        maxHeap.insert(9);
-        maxHeap.insert(3);
-        maxHeap.remove();
-
-        System.out.println(maxHeap.list);
+        BinarySearch binarySearch = new BinarySearch();
+        int[] arr = {1,2,3,4,5,6};
+       int result = binarySearch.search(arr,4);
+        System.out.println(result);
 
     }
 
