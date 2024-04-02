@@ -1,13 +1,26 @@
+import LinkedList.SinglyLinkedList;
 import PriorityHeap.MaxHeap;
 import PriorityHeap.MinHeap;
 import Search.BinarySearch;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) throws Exception {
-        BinarySearch binarySearch = new BinarySearch();
-        int[] arr = {1,2,3,4,5,6};
-       int result = binarySearch.search(arr,4);
+        SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
+        singlyLinkedList.insertFirst(5);
+        singlyLinkedList.insertFirst(6);
+        singlyLinkedList.insertFirst(7);
+        singlyLinkedList.insertLast(10);
+        singlyLinkedList.insertIndex(3,9);
+        System.out.println(singlyLinkedList.deleteByIndex(2));
+        List<Integer> result = singlyLinkedList.display();
         System.out.println(result);
+        System.out.println("head " + singlyLinkedList.getHead());
+        System.out.println("tail " + singlyLinkedList.getTail());
+
+
+
 
     }
 
